@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>My first web map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <H1>Example</H1>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-hash/0.2.1/leaflet-hash.js"></script>
+    <div id="map"></div>
+    <script>
+        //initialize the map
+        var map = L.map('map').setView([51.9741, 5.6688], 15);
+
+        //Create baselayer - tegels 
+        var backgroundMap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+            attribution: '<a href="http://openstreetmap.org">OpenStreetMap</a>contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+            maxZoom: 19
+        }
+        );
+        // Add base layer to map. 
+        backgroundMap.addTo(map);
+
+        // Hash in URL
+        var hash = new L.Hash(map);
+
+        //Add markers
+        var forum = L.marker([ 51.98531, 5.66361]);
+        forum.addTo(map);
+
+        var atlas = L.marker([ 51.9864, 5.66801]);
+        atlas.addTo(map);
+
+        var uni = L.marker([ 51.98514, 5.66647]);
+        uni.addTo(map);
+
+        //Add pop-ups
+        var popup = "The Forum Building.";
+        forum.bindPopup(popup);
+
+        var popup1 = "The atlas building";
+        atlas.bindPopup(popup1)
+
+        var popup2 = "What building is this? ";
+        uni.bindPopup(popup2);
+
+        //add a circle
+        var circle = L.circle([51.98531, 5.66361], 500, {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5
+        }).addTo(map);
+
+        //add a polygon   
+        var polygon = L.polygon(
+            [[
+            [51.98675, 5.66554], 
+            [51.9875, 5.66832], 
+            [51.98825, 5.66778], 
+            [51.98779, 5.66602], 
+            [51.98784, 5.66591], 
+            [51.98758, 5.66501], 
+            [51.98753, 5.66498], 
+            [51.98675, 5.66554]]]).addTo(map);
+    </script>
+</body>
+
+</html>
