@@ -1,6 +1,6 @@
 # Workshop Webmapping for Beginners
 
-[Workshop](http://2017.foss4g.org/workshop-signup/#openModal-110) 2019 - Wageningen Universtity 
+Workshop 2019 - Wageningen Universtity 
 
 
 The team from [Webmapper](http://www.webmapper.nl "What the map can be") developed this workshop in the context of [Maptime](http://maptime.io) to share their hands-on experience in web cartography and geographic web application development. The workshop has been given for several conferences and meetups. 
