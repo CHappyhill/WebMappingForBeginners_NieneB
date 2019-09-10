@@ -44,8 +44,16 @@
             tms: true,
             attribution: 'Map data: <a href="http://www.kadaster.nl">Kadaster</a>'
         });
-
         pdokachtergrondkaart.addTo(map);
+
+        // ADD a WMS layer
+        var cbs = L.tileLayer.wms('https://geodata.nationaalgeoregister.nl/wijkenbuurten2018/wms', {
+                'layers': 'cbs_buurten_2018',
+                'styles': 'wijkenbuurten2018:wijkenbuurten_thema_buurten_default',
+                'srs': 'EPSG:28992',
+                'format': 'image/png',
+                'transparent': true
+            }).addTo(map);
 
         // Hash in URL
         var hash = new L.Hash(map);
