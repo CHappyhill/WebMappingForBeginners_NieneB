@@ -109,7 +109,7 @@
         // ADD the geoJSON Layer
         L.geoJSON(myGeojson).addTo(map);
 
-        // Create a marker first
+        // Create a marker style
         var geojsonMarkerOptions = {
             radius: 10,
             fillColor: "#ff7800",
@@ -156,6 +156,7 @@
 
         // send the request
         xhttp.send();
+
         // Hash in URL
         var hash = new L.Hash(map);
 
