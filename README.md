@@ -16,7 +16,7 @@ The workshop can be found in the [wiki](https://github.com/NieneB/webmapping_for
 
 ## Presentation
 
-This workshop will start with a [presentation](https://nieneb.github.io/webmapping_for_beginners_v2/) to introduce the basic concepts that are needed to do this workshop. 
+This workshop will start with a [presentation](https://NieneB.github.io/webmapping_for_beginners_v2/) to introduce the basic concepts that are needed to do this workshop. 
 
 ## Short outline of the workshop
 
