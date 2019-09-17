@@ -6,10 +6,6 @@
  @import url(../../lib/font/Lato2OFLWeb/Lato/latofonts.css);
  @import url(../../lib/font/cartiqo/cartiqo.css);
 
-section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
-  color: #222; }
-
-
 .cartiqo {
     font-family: "cartiqo", "LatoWeb", Helvetica, sans-serif;
     color: #ffffff;
@@ -30,15 +26,13 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 body {
   background:  #f9f9f9;
   background-color: #f9f9f9;
-  background-image: url('../../backgrounds/exclusive-paper.png');
+  background-image: url('../../img/exclusive-paper.png');
 }
 .patternBackground{
-    background-image: url('../../backgrounds/hexellence.png');
     background-color: #f9f9f9;
 }
 
 .takeaway {
-    background-image: url('../../backgrounds/hexellence.png');
     background-color: #f9f9f9;
     padding: 15px;
     text-align: left;
@@ -53,7 +47,7 @@ body {
 
 ::selection {
   color: #fff;
-  background: #317581;
+  background: #9dbbc0;
   text-shadow: none; }
 
 .reveal .slides > section,
@@ -113,7 +107,7 @@ body {
 
 .reveal h2 {
   font-size: 1.6em; 
-text-decoration: underline; }
+ }
 
 
 .reveal h3 {
