@@ -27,7 +27,7 @@ Therefore we'll start off with a brief introduction into making web pages in gen
 2. If you are not comfortable with HTML and CSS the [Making a Web Page](https://github.com/NieneB/webmapping_for_beginners_v2/wiki/Making-a-web-page) tutorial will get you started.
 3. In [Leaflet step 1](https://github.com/NieneB/webmapping_for_beginners_v2/wiki/Leaflet-step-1) we will set up the basics to show a standard background map with Leaflet.
 4. In [Leaflet step 2](https://github.com/NieneB/webmapping_for_beginners_v2/wiki/Leaflet-step-2) we will add markers, circles and polygons to our map.
-5. In [Leaflet step 3](https://github.com/NieneB/webmapping_for_beginners_v2/wiki/Leaflet-step-3) we will change the projetion to RDNew(EPSG:28992) and add a WMS service from the CBS. 
+5. In [Leaflet step 3](https://github.com/NieneB/webmapping_for_beginners_v2/wiki/Leaflet-step-3) we will change the projection to RDNew(EPSG:28992) and add a WMS service from the CBS. 
 5. In [Leaflet step 4](https://github.com/NieneB/webmapping_for_beginners_v2/wiki/Leaflet-step-4) we will set up a local server and add a GeoJSON file containing geo-spatial data to our map.
 5. Get familiar with D3 in [Introduction D3](https://github.com/NieneB/webmapping_for_beginners_v2/wiki/Introduction-D3).
 6. In [D3 step 1](https://github.com/NieneB/webmapping_for_beginners_v2/wiki/D3-step-1) we will set up the basics to show a simple world map with D3.
