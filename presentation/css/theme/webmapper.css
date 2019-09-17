@@ -267,6 +267,7 @@ body {
   background-color: #317581;
   padding: 5px;
   border-radius: 5px;
+  line-height: 1.5;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
