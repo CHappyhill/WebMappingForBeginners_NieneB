@@ -1,14 +1,6 @@
 # Workshop Webmapping for Beginners
 
-Workshop 2019 - Wageningen University 
-
-
-The team from [Webmapper](http://www.webmapper.nl "What the map can be") developed this workshop in the context of [Maptime](http://maptime.io) to share their hands-on experience in web cartography and geographic web application development. The workshop has been given for several conferences and meetups. 
-This is a revised, further developed version with new versions of Leaflet and D3. 
-
-<p align="center"> <img align="center" src="https://raw.githubusercontent.com/wiki/NieneB/webmapping_for_beginners_v2/img/webmapper_logo_tekst.png" alt="webmapper"> </p>
-
-Webmapper is a cartographic development and consultancy company based in Utrecht, the Netherlands. -They make geographic applications for the web with special attention for web-cartography. 
+Workshop 2020 - Wageningen University 
 
 ## Workshop
 
@@ -20,7 +12,7 @@ This workshop will start with a [presentation](https://NieneB.github.io/webmappi
 
 ## Short outline of the workshop
 
-JavaScript powers most on-line maps these days. During this workshop we'll cover the two primary mapping libraries D3.js and Leaflet.js. This workshop will start from the very beginning! Never written a line of code before? Don't worry! This workshop will help get you started. 
+JavaScript powers most on-line maps these days. During this workshop we'll cover the primary mapping library: Leaflet.js. This workshop will start from the very beginning! Never written a line of code before? Don't worry! This workshop will help get you started. 
 Therefore we'll start off with a brief introduction into making web pages in general. To eventually spend most of our time on learning the tools of the trade.
 
 1. First we will introduce Leaflet in the [Introduction Leaflet](https://github.com/NieneB/webmapping_for_beginners_v2/wiki/Introduction-Leaflet).
@@ -29,10 +21,6 @@ Therefore we'll start off with a brief introduction into making web pages in gen
 4. In [Leaflet step 2](https://github.com/NieneB/webmapping_for_beginners_v2/wiki/Leaflet-step-2) we will add markers, circles and polygons to our map.
 5. In [Leaflet step 3](https://github.com/NieneB/webmapping_for_beginners_v2/wiki/Leaflet-step-3) we will change the projection to RDNew(EPSG:28992) and add a WMS service from the CBS. 
 5. In [Leaflet step 4](https://github.com/NieneB/webmapping_for_beginners_v2/wiki/Leaflet-step-4) we will set up a local server and add a GeoJSON file containing geo-spatial data to our map.
-5. Get familiar with D3 in [Introduction D3](https://github.com/NieneB/webmapping_for_beginners_v2/wiki/Introduction-D3).
-6. In [D3 step 1](https://github.com/NieneB/webmapping_for_beginners_v2/wiki/D3-step-1) we will set up the basics to show a simple world map with D3.
-7. In [D3 step 2](https://github.com/NieneB/webmapping_for_beginners_v2/wiki/D3-step-2) we will add extra data from a GeoJSON file to our map and style it based on data attributes. 
-8. In [D3 step 3](https://github.com/NieneB/webmapping_for_beginners_v2/wiki/D3-step-3) we will add a data-driven legend to our webpage. 
 9. Eventually we will put our maps online, with [Hosting on Github](https://github.com/NieneB/webmapping_for_beginners_v2/wiki/Hosting-on-github)
 
 
