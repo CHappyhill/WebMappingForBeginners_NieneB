@@ -98,18 +98,18 @@
         pdokachtergrondkaart.addTo(map);
 
        
-        // // Create a marker style
-        // let geojsonMarkerOptions = {
-        //     radius: 10,
-        //     fillColor: "#ee0033",
-        //     color: "#000",
-        //     weight: 3,
-        //     opacity: 1,
-        //     fillOpacity: 0.8
-        // };
+        // Create a marker style
+        let geojsonMarkerOptions = {
+            radius: 10,
+            fillColor: "#ee0033",
+            color: "#000",
+            weight: 3,
+            opacity: 1,
+            fillOpacity: 0.8
+        };
 
         // Create FUNCTION  for data driven styling
-        function geojsonMarkerOptions(feature) {
+        function geojsonMarkerFunction(feature) {
             return {
                 radius: feature.properties.aantal_partijen*4,
                 fillColor: "#ff7800",
@@ -123,17 +123,18 @@
         //create a empty geojson layer
         let geojson = L.geoJson(null, {
             pointToLayer: function (feature, latlng) {
-                return L.circleMarker(latlng, geojsonMarkerOptions(feature));  //use geojsonMarkerOptions(feature) for data driven styling
+                // return L.circleMarker(latlng, geojsonMarkerOptions);  
+                return L.circleMarker(latlng, geojsonMarkerFunction(feature));  // use this line for data driven styling
             }
         }).addTo(map);
 
         // Fetch the geojson file
-        fetch("./trafic_accidents_wageningen_2017.geojson")
+        fetch("https://raw.githubusercontent.com/NieneB/webmapping_for_beginners_v2/master/leaflet-part-4/trafic_accidents_wageningen_2017.geojson")
             .then(response => response.json())
             .then(data => {
                 geojson.addData(data);
             })
-            .catch( error => alert(error))
+            .catch( error => alert("Sorry, the data cannot be found, this is the error: " + error))
 
         // Hash in URL
         const hash = new L.Hash(map);
