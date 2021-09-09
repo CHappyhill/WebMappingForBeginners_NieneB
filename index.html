@@ -146,7 +146,7 @@
             </tr>
 
             <tr>
-              <td colspan="2" align="center"><b>Show & tell in MS Teams</b> </td>
+              <td colspan="2" align="center"><b>Show & tell </b> </td>
             </tr>
           </table>
         </section>
@@ -550,7 +550,7 @@
             <li><a href="">Turf.js</a> </li>
             <li> <a href="https://developers.arcgis.com/javascript/">ArcGIS Javascript API</a> </li>
             <li><a href="https://www.mapbox.com/mapbox.js/api/v3.1.1/">MapboxGL.js</a></li>
-            <li> <a href="https://github.com/tangrams/tangram">Tangram</a< /li>
+            <li> <a href="https://maplibre.org/">MapLibre </a></li>
             <li> <a href="https://carto.com">CARTO</a></li>
             <li><a href="https://developer.here.com/develop/javascript-api">HERE Maps</a></li>
             <li><a href="https://developers.google.com/maps/documentation/javascript/">Google Maps API</a>
@@ -579,9 +579,8 @@
           <p class="fragment appear"><a href="https://www.mapbox.com/mapbox.js/api/v3.1.1/">MapboxGL.js</a>
             for vector
             tiles</p>
-          <p class="fragment appear"> <a href="https://github.com/tangrams/tangram">Tangram</a> for vector
-            tiles
-            alternative</p>
+          <p class="fragment appear"> <a href="https://maplibre.org/">MapLibre </a> for vector
+            tiles open source alternative</p>
           <p class="fragment appear"> <a href="https://www.mapbox.com/">Mapbox Studio</a> for easy cloud
             solutions</p>
           <p class="fragment appear"> <a href="https://carto.com">CARTO</a> and buisness intellegence & cloud
@@ -603,7 +602,7 @@
         <section>
           <h1>Let's look at:</h1>
           <p>Leaflet for Raster tile maps</p>
-          <p>MapboxGL.js for Vector Tile maps </p>
+          <p>MapboxGL.js / MapLibre for Vector Tile maps </p>
           <p>D3.js for geo data visualizations</p>
         </section>
         <!-- <section>
@@ -745,43 +744,51 @@
       <section>
         <!-- Mapbox GL JS-->
         <section>
-          <h1>MapboxGL.js</h1>
+          <h1>MapboxGL.js </h1>
           <img src="presentation/img/mapbox.jpeg" width="500">
         </section>
         <section>
-          <p>Developed by:</p>
-          <img src="https://cdn-images-1.medium.com/max/1600/0*ok6yuDnTx4o2PSFx.png" width="400">
-          <p><a href="https://www.mapbox.com/mapbox-gl-js/api/">mapbox-gl-js api</a></p>
-          <p><a href="https://www.mapbox.com/mapbox-gl-js/style-spec">mapbox style spec</a></p>
+          <img src="presentation/img/mapboxlicence.png" />
+          <p>December 2020: Mapbox GL JS v2 is not free anymore</p>
+          <a href="https://www.geoapify.com/mapbox-gl-new-license-and-6-free-alternatives"> more info </a>
+          <p>Previous Mapbox GL JS v1 is still available under the free and open BSD3 license</p>
         </section>
-        <!-- <section>
-                                                      <img src="presentation/img/webmap/vector_tile_creation.png">
-                                                    </section> -->
+        <section>
+          <h1>MapLibre! </h1>
+          <img src="presentation/img/maplibre.png" width="500">
+          https://maplibre.org/
+
+          
+        </section>
+        <section>
+          <li>Community governed </li>
+          <li>MapTiler, WhereGroup, Amazon, Facebook, Microsoft, Elastic, Stadia, Ceres Imaging</li>
+          <li>100% free, open-source, and vendor-neutral project governance </li>
+        </section>
+
+       
         <section>
           <img src="presentation/img/tiles_styles_sprites_glyphs.png">
         </section>
         <section>
-          <h4><a href="https://docs.mapbox.com/mapbox-gl-js/overview/">mapbox-gl.js overview</a></h4>
+          <h4><a href="https://maplibre.org/maplibre-gl-js-docs/api/">MapLibre docs overview</a></h4>
           <pre><code data-trim>
-                                                        <script src='https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.js'></script>
-                                                        <link href='https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.css' rel='stylesheet' />
+            <script src='https://unpkg.com/maplibre-gl@1.15.2/dist/maplibre-gl.js'></script>
+            <link href='https://unpkg.com/maplibre-gl@1.15.2/dist/maplibre-gl.css' rel='stylesheet' />
                                                       </code></pre>
-          <pre><code data-trim>
-                                                        <div id='map-container' style='width: 400px; height: 300px;'></div>
-                                                      </code></pre>
+        
         </section>
         <section>
+          <pre><code data-trim>
+            <div id='map-container' style='width: 400px; height: 300px;'></div>
+          </code></pre>
           <pre><code data-trim data-noescape>
-                                                        mapboxgl.accessToken = 'yourowntoken';
-                                                        let map = new mapboxgl.Map({
-                                                          container: 'map-container',
-                                                          style: 'style.json',
-                                                          hash: true,
-                                                          zoom: 11,
-                                                          pitch: 60,
-                                                          bearing: 62.4,
-                                                          center: [ 4.8, 52.4]
-                                                        });
+            var map = new maplibregl.Map({
+              container: 'map',
+              style: 'https://api.maptiler.com/maps/streets/style.json?key=get_your_own_OpIi9ZULNHzrESv6T2vL', // stylesheet location
+              center: [-74.5, 40], // starting position [lng, lat]
+              zoom: 9 // starting zoom
+              });
                                                       </code></pre>
         </section>
         <section>
@@ -855,10 +862,15 @@
           </div>
         </section> -->
         <section>
-          <h1> Use MapboxGL.js for</h1>
+          <h1> Use MapLibre for</h1>
           <p>Customized background maps</p>
           <p>Interactive data </p>
           <p>WebGL rendering</p>
+          
+          <h2> Use MapboxGL.js for</h2>
+          <p>3D maps</p>
+          <p>Provided data</p>
+          <p>Commercial projects</p>
         </section>
         <section >
           <h2>Example</h2>
@@ -1052,7 +1064,7 @@
             </tr>
 
             <tr>
-              <td colspan="2" align="center"><b>Show & tell in MS Teams</b> </td>
+              <td colspan="2" align="center"><b>Show & tell </b> </td>
             </tr>
           </table>
         </section>
